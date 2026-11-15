@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Define By Nature</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-flex">
+      <h1>Define By Nature</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Products & Services</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="locations" class="card">
+      <h2>Our Physical Locations</h2>
+      
+      <article class="location-item">
+        <h3>Location 1: Cape Town Flagship Studio</h3>
+        <p>12 Kloof Street, Gardens, Cape Town, 8001</p>
+        <p>Phone: +27 (0)21 400 1234 | Email: capetown@definebynature.co.za</p>
+        <div class="map-container" style="margin-top: 15px; margin-bottom: 25px;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.8!2d18.4241!3d-33.9249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDU1JzI5LjYiUyAxOMKwMjUnMjcuNiJF!5e0!3m2!1sen!2sza!4v1600000000000" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </article>
+
+      <article class="location-item">
+        <h3>Location 2: Johannesburg Concept Pop-Up</h3>
+        <p>44 Stanley Avenue, Braamfontein Werf, Johannesburg, 2092</p>
+        <p>Phone: +27 (0)11 500 5678 | Email: jhb@definebynature.co.za</p>
+        <div class="map-container" style="margin-top: 15px;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.0!2d28.0187!3d-26.1884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDExJzE4LjIiUyAyOMKwMDEnMDcuMyJF!5e0!3m2!1sen!2sza!4v1600000000000" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </article>
+    </section>
+
+    <section id="contact-form" class="card" style="margin-top: 30px;">
+      <h2>Send Us a General Message</h2>
+      <p>Submit information for a general message being sent to the organisation[cite: 21].</p>
+      <form id="contactForm" action="mailto:capetown@definebynature.co.za" method="post" enctype="text/plain" novalidate>
+        <div class="form-group">
+          <label for="contact-name">Your Name:</label>
+          <input type="text" id="contact-name" name="Name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-email">Your Email:</label>
+          <input type="email" id="contact-email" name="Email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-msg-type">Type of Message:</label>
+          <select id="contact-msg-type" name="Message_Type" required style="width: 100%; padding: 10px; margin-top: 5px;">
+            <option value="">-- Select message type --</option>
+            <option value="General Query">General Query</option>
+            <option value="Feedback">Website Feedback</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-msg">Full Message:</label>
+          <textarea id="contact-msg" name="Message" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary" style="margin-top: 10px;">Send Email</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Define By Nature. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

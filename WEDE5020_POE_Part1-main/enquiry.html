@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquiry | Define By Nature</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-flex">
+      <h1>Define By Nature</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Products & Services</a>
+        <a href="enquiry.html" class="active">Enquiry</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="enquiry-section" class="card">
+      <h2>Product, Service & Sponsorship Enquiries</h2>
+      <p>Submit your inquiries regarding services, products, or the possibility of becoming a volunteer or sponsor below[cite: 21].</p>
+      
+      <form id="enquiryForm" action="#" method="post" novalidate>
+        <div class="form-group">
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="enquiry-type">Enquiry Type:</label>
+          <select id="enquiry-type" name="enquiry-type" required style="width: 100%; padding: 10px; margin-top: 5px;">
+            <option value="">-- Please select an option --</option>
+            <option value="product">Product Pricing & Availability</option>
+            <option value="service">Custom Garment Service</option>
+            <option value="sponsor">Corporate Sponsorship</option>
+            <option value="volunteer">Volunteer Program</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message Details:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn-primary" style="margin-top: 10px;">Submit Enquiry</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Define By Nature. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
